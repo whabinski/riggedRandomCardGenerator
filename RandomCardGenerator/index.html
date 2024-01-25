@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Card Generator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="startScreen">
+        <div id="background"></div>
+        <header> Random Card Generator </header>
+        <button class="button button1" onclick="startButton()">START</button>
+        <div>
+            <input type="text" id="riggedInputBox" name="riggedInput">
+        </div>
+        <div>
+            <p class="small-text"> No I did not make this website just for a magic trick lol </p>
+        </div>
+    </div>
+
+    <div id="cardScreen" style="display: none">
+        <div id="background"></div>
+        <button class="button button2" onclick="drawCardButton()">DRAW</button>
+        <div id="cardContainer">
+            <img src="cards/back_of_card.png" class="card">
+        </div>
+        <button class="button button3" onclick="resetButton()">RESET</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

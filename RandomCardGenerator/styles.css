@@ -1,0 +1,76 @@
+/* styles.css */
+
+/* Center everything width-wise */
+#startScreen,
+#cardScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('cards/felt.png');
+    background-size: cover;
+}
+
+#riggedInputBox {
+    opacity: 0;
+    height: 8em;
+    width: 24em;
+}
+
+.card {
+    width: 200px; 
+    height: 300px;
+    transform: rotate(0deg);
+    margin: 0 auto; 
+}
+
+header {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    color: #c91414;
+    text-shadow: 5px 5px 0px rgba(0, 0, 0, 10);
+    margin-bottom: 50px;
+}
+
+.small-text {
+    font-size: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+  }
+
+button {
+    color: #ffffff;
+    font-size: 2.5em;
+    border: 1px solid #010508;
+    border-radius: 5px;
+    padding: 6px 100px;
+    margin: 10px;
+}
+
+.button.button1 {
+    background-color: #22db6c;
+}
+
+.button.button2 {
+    background-color: #3770e1;
+}
+
+.button.button3 {
+    background-color: #ce3b3bf7;
+    opacity: 0;
+}
+
